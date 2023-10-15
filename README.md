@@ -4,6 +4,23 @@ This is an SHDLC Driver for Sensirion SPS30. I am using the SPS30 Evaluation Kit
 
 `Sps30ShdlcDevice` is implemented according to [Create a Device Class @ Sensirion SHDLC Python Driver](https://sensirion.github.io/python-shdlc-driver/custom_commands.html#creating-a-device-class).
 
+# Install
+
+```
+pip install shdlc-sps30
+```
+
+# Usage
+
+```
+from shdlc_sps30 import Sps30ShdlcDevice
+
+with ShdlcSerialPort(port='/dev/ttyUSB0', baudrate=115200) as port:
+	device = Sps30ShdlcDevice(ShdlcConnection(port))
+        serial_number = device.device_information_serial_number()
+        print("serial_number: %s" % serial_number)
+```
+
 # Example
 
 See [test.py](test.py).
