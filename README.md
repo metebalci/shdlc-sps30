@@ -1,8 +1,10 @@
-# shdlc-sps30
+# SHDLC Driver for Sensirion SPS30
 
-This is an SHDLC Driver for Sensirion SPS30. I am using the SPS30 Evaluation Kit (SEK-SPS30) with a Raspberry Pi through UART interface.
+This Python module is developed to be used with the SPS30 Evaluation Kit (SEK-SPS30). I am using and testing it with a Raspberry Pi.
 
 `Sps30ShdlcDevice` is implemented according to [Create a Device Class @ Sensirion SHDLC Python Driver](https://sensirion.github.io/python-shdlc-driver/custom_commands.html#creating-a-device-class).
+
+Please check the source code for documentation.
 
 # Install
 
